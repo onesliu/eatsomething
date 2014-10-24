@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Delicious!</title>
+  <link rel="stylesheet" href="stylesheet/jquery_mobile/jquery.mobile-1.4.4.css">
+  <link rel="stylesheet" href="stylesheet/font-awesome.css">
+  <link rel="stylesheet" href="stylesheet/delicious.css">
+</head>
+<body>
+<div data-role="page">
+
+  <!-- header -->
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#promotions" data-role="button"><i class="fa fa-home fa-2x fa-fw"></i>&nbsp;吃什么</a></li>
+        <li><a href="#categories" data-role="button"><i class="fa fa-bars fa-2x fa-fw"></i>&nbsp;商品分类</a></li>
+        <li><a href="#billings" data-role="button"><i class="fa fa-shopping-cart fa-2x fa-fw"></i>&nbsp;结帐</a></li>
+        <li><a href="#orders" data-role="button"><i class="fa fa-user fa-2x fa-fw"></i>&nbsp;我的订单</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div data-role="content">
+
+    <h6 class="sub-navbar">今日菜谱</h6>
+    <ul data-role="listview" data-inset="true" data-autodividers="false" data-icon="false">
+      <!--<li data-role="list-divider"><h2>今日菜谱</h2></li>-->
+      <li>
+        <a href="#">
+          <img src="images/food_01.jpg">
+          <sub>累觉不爱，随便做点家常的饭菜</sub>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/food_02.jpg">
+          <sub>家常味</sub>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/food_03.jpg">
+          <sub>佳肴美食醉人</sub>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- footer -->
+  <div data-role="footer">
+    <a href="#more" data-role="button" data-icon="arrow-r" data-iconpos="right" data-corners="true">更多菜品选择</a>
+  </div>
+</div>
+
+<div data-role="page" id="promotions">
+  <h1>TODO: 吃什么</h1>
+</div>
+
+<div data-role="page" id="categories">
+  <h1>TODO: 商品分类页面</h1>
+</div>
+
+<div data-role="page" id="billings">
+  <h1>TODO: 结帐</h1>
+</div>
+
+<div data-role="page" id="orders">
+  <h1>TODO: 我的订单</h1>
+</div>
+
+<div data-role="page" id="more">
+  <h1>TODO: 更多菜品选择</h1>
+</div>
+
+<script type="text/javascript" src="javascript/jquery/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="javascript/jquery_mobile/jquery.mobile-1.4.4.js"></script>
+</body>
+</html>
