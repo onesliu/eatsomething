@@ -1,30 +1,42 @@
+.ui-header {
+    border: 0;
+}
+
 .ui-bar-a ul {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
-    border-bottom: 1px solid #80cbc4;
+    border-width: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .14);
 }
 
-.ui-bar-a li .ui-btn{
-    background-color: #009688 !important;
-    color: #FFF !important;
+.ui-bar-a li {
+    border-right: 1px;
 }
 
-.ui-bar-a .fa {
-    font-size: 1em;
+.ui-bar-a li .ui-btn {
+    border-width: 0;
+    border-radius: 0;
+    background-color: #58B073 !important;
+}
+
+.ui-bar-a li .ui-btn:hover {
+    background-color: #40AB61;
+    text-shadow: none;
 }
 
 .ui-content .sub-navbar {
-    font-size: 0.8em;
-    color: rgba(0, 0, 0, .54);
-    border-left: 5px solid #009688;
-    padding-left: 15px;
-    line-height: 2em;
-    height: 2em;
+    height: 3em;
+    line-height: 3em;
+    padding-left: 1.5em;
+    margin: 1em 0 0;
+    background-color: #eee;
+    border-left: 5px solid #58B073;
 }
 
 .ui-listview {
     box-shadow: none;
     border: 0;
     border-radius: 0;
+    margin-top: 5px !important;
 }
 
 .ui-listview > li:first-child > .ui-btn {
@@ -44,18 +56,62 @@
     padding: 0 !important;
 }
 
-.ui-listview > li > .ui-btn > img {
-    display: block;
-    position: static !important;
-    margin: 15px 0 5px;
-    max-height: 10em !important;
-    max-width: 100% !important;
-}
-
 .ui-listview > li > .ui-btn > sub {
     display: block;
-    text-align: right;
+    text-align: left;
     font-weight: normal;
     color: rgba(0, 0, 0, .54);
-    margin: 15px 0;
+    margin: 1em 0;
+    max-width: 70%;
+}
+
+.ui-footer {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, .26);
+    border-top: 1px solid rgba(0, 0, 0, .14);
+}
+
+.ui-footer .ui-btn {
+    display: block;
+    margin: 0;
+    border: 0;
+}
+
+/**
+* Text styles for all levels in html doc
+**/
+.ui-header .ui-text-header {
+    color: rgba(255, 255, 255, .87) !important;
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+
+.ui-footer .ui-text-footer {
+    color: rgba(0, 0, 0, .87) !important;
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+
+.ui-content .ui-text-subheader {
+    font-size: 1em;
+    color: rgba(0, 0, 0, .54);
+}
+
+/**
+* Image styles for all levels in size
+**/
+img.ui-img-jumbotron {
+    display: block;
+    position: relative !important;
+    margin: 1em 0;
+    max-height: 10em !important;
+}
+
+img.ui-img-thumbnail {
+
+}
+
+img.ui-img-icon {
+
 }

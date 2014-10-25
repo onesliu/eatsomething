@@ -2,10 +2,15 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <title>Delicious!</title>
   <link rel="stylesheet" href="stylesheet/jquery_mobile/jquery.mobile-1.4.4.css">
   <link rel="stylesheet" href="stylesheet/font-awesome.css">
+  <link rel="stylesheet" href="stylesheet/public.css">
   <link rel="stylesheet" href="stylesheet/delicious.css">
+  <script type="text/javascript" src="javascript/jquery/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="javascript/jquery_mobile/jquery.mobile-1.4.4.js"></script>
 </head>
 <body>
 <div data-role="page">
@@ -14,10 +19,10 @@
   <div data-role="header" data-position="fixed" data-theme="a">
     <div data-role="navbar">
       <ul>
-        <li><a href="#promotions" data-role="button"><i class="fa fa-home fa-2x fa-fw"></i>&nbsp;吃什么</a></li>
-        <li><a href="#categories" data-role="button"><i class="fa fa-bars fa-2x fa-fw"></i>&nbsp;商品分类</a></li>
-        <li><a href="#billings" data-role="button"><i class="fa fa-shopping-cart fa-2x fa-fw"></i>&nbsp;结帐</a></li>
-        <li><a href="#orders" data-role="button"><i class="fa fa-user fa-2x fa-fw"></i>&nbsp;我的订单</a></li>
+        <li><a href="#promotions" data-role="button" class="ui-text-header"><i class="fa fa-home fa-lg fa-fw"></i>&nbsp;吃什么</a></li>
+        <li><a href="#categories" data-role="button" class="ui-text-header"><i class="fa fa-bars fa-lg fa-fw"></i>&nbsp;商品分类</a></li>
+        <li><a href="#billings" data-role="button" class="ui-text-header"><i class="fa fa-shopping-cart fa-lg fa-fw"></i>&nbsp;结帐</a></li>
+        <li><a href="#orders" data-role="button" class="ui-text-header"><i class="fa fa-user fa-lg fa-fw"></i>&nbsp;我的订单</a></li>
       </ul>
     </div>
   </div>
@@ -25,24 +30,24 @@
   <!-- content -->
   <div data-role="content">
 
-    <h6 class="sub-navbar">今日菜谱</h6>
+    <h6 class="sub-navbar ui-text-subheader">今日菜谱</h6>
     <ul data-role="listview" data-inset="true" data-autodividers="false" data-icon="false">
       <!--<li data-role="list-divider"><h2>今日菜谱</h2></li>-->
       <li>
         <a href="#">
-          <img src="images/food_01.jpg">
+          <img src="images/food_01.jpg" class="ui-img-jumbotron">
           <sub>累觉不爱，随便做点家常的饭菜</sub>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="images/food_02.jpg">
+          <img src="images/food_02.jpg" class="ui-img-jumbotron">
           <sub>家常味</sub>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="images/food_03.jpg">
+          <img src="images/food_03.jpg" class="ui-img-jumbotron">
           <sub>佳肴美食醉人</sub>
         </a>
       </li>
@@ -50,8 +55,10 @@
   </div>
 
   <!-- footer -->
-  <div data-role="footer">
-    <a href="#more" data-role="button" data-icon="arrow-r" data-iconpos="right" data-corners="true">更多菜品选择</a>
+  <div data-role="footer" data-position="fixed" data-theme="a">
+    <a href="#more" data-role="button" class="ui-text-footer" data-corners="false">更多菜品选择&nbsp;
+      <i class="fa fa-lg fa-angle-double-right"></i>
+    </a>
   </div>
 </div>
 
@@ -75,7 +82,5 @@
   <h1>TODO: 更多菜品选择</h1>
 </div>
 
-<script type="text/javascript" src="javascript/jquery/jquery-1.11.1.js"></script>
-<script type="text/javascript" src="javascript/jquery_mobile/jquery.mobile-1.4.4.js"></script>
 </body>
 </html>
