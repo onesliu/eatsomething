@@ -61,7 +61,7 @@
     text-align: left;
     font-weight: normal;
     color: rgba(0, 0, 0, .54);
-    margin: 1em 0;
+    margin: 1em 0 0.5em;
     max-width: 70%;
 }
 
@@ -79,6 +79,7 @@
 /**
 * Text styles for all levels in html doc
 **/
+
 .ui-header .ui-text-header {
     color: rgba(255, 255, 255, .87) !important;
     font-size: 1.1em !important;
@@ -86,16 +87,32 @@
     text-shadow: none !important;
 }
 
-.ui-footer .ui-text-footer {
-    color: rgba(0, 0, 0, .87) !important;
-    font-size: 1.1em !important;
-    font-weight: normal !important;
-    text-shadow: none !important;
+/* The text style for button "previous page" */
+.ui-header .ui-text-prev-page {
+    text-align: left;
 }
 
 .ui-content .ui-text-subheader {
     font-size: 1em;
     color: rgba(0, 0, 0, .54);
+}
+
+.ui-content .ui-text-summary {
+    max-height: 5em;
+    min-height: 3em;
+    height: 5em;
+    padding: 1em .5em;
+    width: 100%;
+    border-left: 1px solid rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .14);
+    color: rgba(0, 0, 0, .87);
+}
+
+.ui-footer .ui-text-footer {
+    color: rgba(0, 0, 0, .87) !important;
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
 }
 
 /**
