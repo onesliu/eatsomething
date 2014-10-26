@@ -27,44 +27,64 @@
     height: 3em;
     line-height: 3em;
     padding-left: 1.5em;
-    margin: 1em 0 0;
+    margin: 0;
     background-color: #eee;
     border-left: 5px solid #58B073;
 }
 
+/**
+* Style of the lists
+**/
 .ui-listview {
     box-shadow: none;
     border: 0;
     border-radius: 0;
-    margin-top: 5px !important;
+    margin-top: 15px !important;
 }
 
-.ui-listview > li:first-child > .ui-btn {
-    border-top: 0 !important;
+/** jumbotron style as shown in homepage **/
+.ui-listview > li > a.ui-list-item-jumbotron {
+    padding: 10px 8px !important
 }
 
-.ui-listview > li:last-child > .ui-btn {
-    border-bottom: 0 !important;
-}
-
-.ui-listview > li > .ui-btn {
-    border-left-width: 0 !important;
-    border-right-width: 0 !important;
-    /*border-bottom: 1px solid  !important;*/
-    border-radius: 0;
-    border-color: rgba(0, 0, 0, .14);
-    padding: 0 !important;
-}
-
-.ui-listview > li > .ui-btn > sub {
-    display: block;
+.ui-listview > li > a.ui-list-item-jumbotron header {
+    margin-bottom: 20px;
+    /*font-size: 1em;*/
+    color: rgba(0, 0, 0, .87);
     text-align: left;
-    font-weight: normal;
-    color: rgba(0, 0, 0, .54);
-    margin: 1em 0 0.5em;
-    max-width: 70%;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+.ui-listview > li > a.ui-list-item-jumbotron img {
+    max-width: 100% !important;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/**
+* Style of the form control of select
+**/
+.ui-content fieldset.container-recipe-select {
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.ui-content fieldset.container-recipe-select div.ui-select {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.ui-content fieldset.container-recipe-select div.ui-select a {
+    border-radius: 0;
+    box-shadow: 0 0 0;
+}
+
+/**
+* Style of the footer
+**/
 .ui-footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, .26);
     border-top: 1px solid rgba(0, 0, 0, .14);
@@ -74,6 +94,12 @@
     display: block;
     margin: 0;
     border: 0;
+}
+
+.footer-empty {
+    box-shadow: 0 0 0;
+    border: 0;
+    margin: 0;
 }
 
 /**
@@ -98,19 +124,19 @@
 }
 
 .ui-content .ui-text-subheader {
-    font-size: 1em;
+    font-size: 1.1em;
     color: rgba(0, 0, 0, .54);
 }
 
 .ui-content .ui-text-summary {
-    max-height: 5em;
+    max-width: 100%;
     min-height: 3em;
-    height: 5em;
-    padding: 1em .5em;
-    width: 100%;
-    border-left: 1px solid rgba(0, 0, 0, .05);
-    background-color: rgba(0, 0, 0, .14);
+    padding: 10px 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd /*{a-bup-border}*/;
+    background-color: #f6f6f6 /*{a-bup-background-color}*/;
     color: rgba(0, 0, 0, .87);
+    text-shadow: none;
 }
 
 .ui-footer .ui-text-footer {
@@ -126,7 +152,7 @@
 img.ui-img-jumbotron {
     display: block;
     position: relative !important;
-    margin: 1em 0;
+    margin: 5px 0;
     max-height: 10em !important;
 }
 
