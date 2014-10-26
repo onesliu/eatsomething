@@ -79,11 +79,16 @@
 /**
 * Text styles for all levels in html doc
 **/
-
 .ui-header .ui-text-header {
     color: rgba(255, 255, 255, .87) !important;
     font-size: 1.1em !important;
     font-weight: normal !important;
+    text-shadow: none !important;
+}
+
+.ui-header .ui-text-menuicon-caption {
+    color: rgba(255, 255, 255, .87) !important;
+    font-weight: normal;
     text-shadow: none !important;
 }
 
