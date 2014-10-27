@@ -7,13 +7,14 @@
 
   <link rel="stylesheet" href="stylesheet/jquery_mobile/jquery.mobile-1.4.4.css">
   <link rel="stylesheet" href="stylesheet/nivo-slider.css">
+  <link rel="stylesheet" href="stylesheet/nivoslider/themes/default/default.css">
   <link rel="stylesheet" href="stylesheet/font-awesome.css">
   <link rel="stylesheet" href="stylesheet/public.css">
   <link rel="stylesheet" href="stylesheet/delicious.css">
 
   <script type="text/javascript" src="javascript/jquery/jquery-1.11.1.js"></script>
   <script type="text/javascript" src="javascript/jquery_mobile/jquery.mobile-1.4.4.js"></script>
-  <script type="text/javascript" src="javascript/index.js"></script>
+  <script type="text/javascript" src="javascript/jquery/jquery.nivo.slider.pack.js"></script>
 </head>
 <body>
   <div data-role="page">
@@ -22,7 +23,7 @@
       <div data-role="navbar">
         <ul>
           <li>
-            <a href="index.html" data-role="button" class="ui-text-header ui-text-prev-page">
+            <a href="recipe_details.html" data-role="button" class="ui-text-header ui-text-prev-page">
               <i class="fa fa-angle-double-left fa-lg fa-fw"></i>&nbsp;
               返回
             </a>
@@ -32,19 +33,141 @@
     </div>
 
     <!-- The content -->
-    <div data-role="content" class="bg-color-gray">
-      <div id="slider" class="nivoSlider">
-          <img src="images/food_01.jpg" alt="" />
-          <a href="http://dev7studios.com"><img src="images/food_03.jpg" alt="" title="#htmlcaption" /></a>
-          <img src="images/food_02.jpg" alt="" title="This is an example of a caption" />
+    <div data-role="content" class="bg-color-gray pagecontent-full-filled">
+
+      <!-- Header images sliding -->
+      <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+          <img src="images/food_01.jpg" alt="" title="滑动图标题-01"/>
+          <img src="images/food_03.jpg" alt="" title="滑动图标题-02"/>
+          <img src="images/food_02.jpg" alt="" title="滑动图标题-03"/>
+        </div>
       </div>
+
+      <!-- Introduction to the dish -->
+      <section id="recipe_summary" class="ui-text-summary">
+        <header>宫保鸡丁</header>
+        宫保鸡丁是汉族传统经典的名菜，鲁菜和川菜都有该道菜的做法，但是用料有所差别。创始人为贵州织金人丁宝桢，在任山东巡抚时创制该菜，后任四川总督时加以改良，流传至今。此道菜也被归纳为北京宫廷菜。
+        <aside id="recipe_tag" class="tag">
+          <i class="fa fa-tag pull-left"></i>属性：清淡 快速制作 幼儿 美容
+        </aside>
+      </section>
+
+      <!-- The cook guide for this dish -->
+      <ul id="dish_guide_listview" data-role="listview" data-inset="true" data-autodividers="false" data-icon="true">
+        <li data-icon="carat-r">
+          <a href="dish_guide.html" class="ui-li-text-middle">
+            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+            制作过程：菜哥子做川菜
+          </a>
+        </li>
+      </ul>
+
+      <!-- The list of ingredients for current dish -->
+      <header class="">原料购买</header>
+      <ul id="dish_ingredients_listview" data-role="listview" data-inset="true" data-autodividers="false" data-icon="false">
+        <li data-role="list-divider">
+          <h2 class="ui-text-subheader">主料</h2>
+        </li>
+        <li>
+          <a href="dish_ingredient.html" class="ui-li-text-middle">
+            <input type="checkbox" id="ingredient_master_1" name="ingredient_1">
+            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+
+            <p>
+              <span class="text-ingredient-name">原料一</span>
+              <span class="text-ingredient-weight">20克</span>
+              <span class="text-ingredient-instock">有货</span>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="dish_ingredient.html" class="ui-li-text-middle">
+            <input type="checkbox" id="ingredient_master_2" name="ingredient_2">
+            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+
+            <p>
+              <span class="text-ingredient-name">原料二</span>
+              <span class="text-ingredient-weight">10克</span>
+              <span class="text-ingredient-instock">有货</span>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="dish_ingredient.html" class="ui-li-text-middle">
+            <input type="checkbox" id="ingredient_master_3" name="ingredient_3">
+            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+
+            <p>
+              <span class="text-ingredient-name">原料三</span>
+              <span class="text-ingredient-weight">30克</span>
+              <span class="text-ingredient-instock">有货</span>
+            </p>
+          </a>
+        </li>
+
+        <li data-role="list-divider">
+          <h2 class="ui-text-subheader">辅料</h2>
+        </li>
+        <li>
+          <a href="dish_ingredient.html" class="ui-li-text-middle">
+            <input type="checkbox" id="ingredient_slave_1" name="ingredient_1">
+            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+
+            <p>
+              <span class="text-ingredient-name">辅料一</span>
+              <span class="text-ingredient-weight">20克</span>
+              <span class="text-ingredient-instock">有货</span>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="dish_ingredient.html" class="ui-li-text-middle">
+            <input type="checkbox" id="ingredient_slave_2" name="ingredient_2">
+            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+
+            <p>
+              <span class="text-ingredient-name">辅料二</span>
+              <span class="text-ingredient-weight">10克</span>
+              <span class="text-ingredient-instock">有货</span>
+            </p>
+          </a>
+        </li>
+      </ul>
+
     </div>
 
-    <!-- The footer -->
-    <div data-role="footer" class="bg-color-gray">
-
+    <!-- footer -->
+    <div data-role="footer" data-position="fixed" data-theme="a" >
+      <a href="orders.html" data-role="button" class="ui-text-footer" data-corners="false">加入原料购物车&nbsp;
+        <i class="fa fa-lg fa-shopping-cart"></i>
+      </a>
     </div>
 
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('#slider').nivoSlider({
+          effect: 'sliceDownLeft',
+          animSpeed: 500,
+          pauseTime: 3000,
+          directionNav: false,
+          boxCols: 10
+        });
+
+        $('#slider').bind('swipeleft', function (e) {
+          $('a.nivo-nextNav').trigger('click');
+          e.stopImmediatePropagation();
+          return false;
+        });
+
+        $('#slider').bind('swiperight', function (e) {
+          $('a.nivo-prevNav').trigger('click');
+          e.stopImmediatePropagation();
+          return false;
+        });
+
+      });
+    </script>
   </div>
 </body>
 </html>

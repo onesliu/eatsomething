@@ -1,3 +1,14 @@
 .bg-color-gray {
     background-color: #eee !important;
 }
+
+.pagecontent-full-filled {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.ui-li-text-middle {
+    line-height: 1em;
+    height: 1em;
+}
