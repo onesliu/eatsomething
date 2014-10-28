@@ -1,63 +1,46 @@
-.ui-header {
-    border: 0;
-}
-
-.ui-bar-a ul {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
-    border-width: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .14);
-}
-
-.ui-bar-a li {
-    border-right: 1px;
-}
-
-.ui-bar-a li .ui-btn {
-    border-width: 0;
-    border-radius: 0;
-    background-color: #58B073 !important;
-}
-
-.ui-bar-a li .ui-btn:hover {
-    background-color: #40AB61;
-    text-shadow: none;
-}
-
 .ui-content .sub-navbar {
     height: 3em;
     line-height: 3em;
     padding-left: 1.5em;
-    margin: 0;
+    margin: 4% 2% 0 !important;
     background-color: #eee;
-    border-left: 5px solid #58B073;
+    border: 1px solid rgba(0, 0, 0, .14);
+    border-left: 7px solid #58B073;
 }
 
-/**
-* Style of the lists
-**/
-.ui-listview {
-    box-shadow: none;
-    border: 0;
-    border-radius: 0;
-    margin-top: 15px !important;
+/**********************************
+**  Styles for list with jumbotron images/content
+***********************************/
+.ul-jumbotron > li {
+    padding: 3% 0;
+    border-bottom: 1px solid #BBB;
+    border-left: 0;
+    border-right: 0;
+}
+
+.ul-jumbotron > li.ui-last-child {
+    border-bottom: 0;
 }
 
 /** jumbotron style as shown in homepage **/
-.ui-listview > li > a.ui-list-item-jumbotron {
-    padding: 10px 8px !important
+.ui-listview > li > a.li-link-jumbotron {
+    padding: 0 !important;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+    background-color: #eee !important;
 }
 
-.ui-listview > li > a.ui-list-item-jumbotron header {
-    margin-bottom: 20px;
-    /*font-size: 1em;*/
-    color: rgba(0, 0, 0, .87);
+.ui-listview > li > a.li-link-jumbotron footer {
+    margin: 0px;
+    padding: .7em 1em;
+    color: rgba(0, 0, 0, .54);
     text-align: left;
     text-shadow: none;
     text-decoration: none;
     font-weight: bold;
 }
 
-.ui-listview > li > a.ui-list-item-jumbotron img {
+.ui-listview > li > a.li-link-jumbotron img {
     max-width: 100% !important;
     height: auto;
     display: inline-block;
@@ -82,123 +65,52 @@
     box-shadow: 0 0 0;
 }
 
-/**
-* Style of the footer
-**/
-.ui-footer {
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, .26);
-    border-top: 1px solid rgba(0, 0, 0, .14);
-}
-
-.ui-footer .ui-btn {
-    display: block;
-    margin: 0;
-    border: 0;
-}
-
-.footer-empty {
-    box-shadow: 0 0 0;
-    border: 0;
-    margin: 0;
-}
-
-/**
-* Text styles for all levels in html doc
-**/
-.ui-header .ui-text-header {
-    color: rgba(255, 255, 255, .87) !important;
-    font-size: 1.1em !important;
-    font-weight: normal !important;
-    text-shadow: none !important;
-}
-
-.ui-header .ui-text-menuicon-caption {
-    color: rgba(255, 255, 255, .87) !important;
-    font-weight: normal;
-    text-shadow: none !important;
-}
-
-/* The text style for button "previous page" */
-.ui-header .ui-text-prev-page {
-    text-align: left;
-}
-
-.ui-content .ui-text-subheader {
-    font-size: 1.1em;
-    color: rgba(0, 0, 0, .54);
-}
-
-.ui-content .ui-text-summary {
-    max-width: 100%;
-    min-height: 3em;
-    padding: 10px 8px;
-    margin: 5px 0;
-    border: 1px solid #ddd /*{a-bup-border}*/;
-    background-color: #f6f6f6 /*{a-bup-background-color}*/;
-    color: rgba(0, 0, 0, .87);
-    text-shadow: none;
-}
-
-.ui-content .ui-text-summary aside {
-    padding: 0;
-    margin: 10px 0 0;
-    font-size: 0.8em;
-    color: rgba(0, 0, 0, .54);
-}
-
-.ui-content .ui-text-summary header {
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: left;
-    margin: 5px 0 10px;
-}
-
-.ui-footer .ui-text-footer {
-    color: rgba(0, 0, 0, .87) !important;
-    font-size: 1.1em !important;
-    font-weight: normal !important;
-    text-shadow: none !important;
-}
-
 .ui-listview input[type="checkbox"] {
     padding: 0 5px;
     vertical-align: middle;
 }
 
-/** The item text style for dish ingredients list **/
-.ui-listview .text-ingredient-name {
+/**********************************
+**  Styles for list items with form controls, i.e., checkbox, radio, text
+***********************************/
+.li-with-formcontrol {
+    padding-left: 2.8em;
+}
+
+.li-with-formcontrol div.ui-checkbox {
+    position: static;
+    margin: 0;
+}
+
+.li-with-formcontrol div.ui-checkbox input {
+    margin-left: 4px;
+}
+
+.li-with-formcontrol img {
+    position: static;
+    display: inline;
+    vertical-align: middle;
+}
+
+.li-with-formcontrol p {
+    display: inline;
+}
+
+.li-with-formcontrol span {
     display: inline-block;
-    width: 50%;
-    text-align: left;
+}
+
+.ui-listview .text-ingredient-name {
+    width: 30%;
     padding-left: 5px;
 }
 
 .ui-listview .text-ingredient-weight {
-    display: inline-block;
-    width: 20%;
-    text-align: left;
+    width: 10%;
 }
 
 .ui-listview .text-ingredient-instock {
-    display: inline-block;
     width: 20%;
     text-align: right;
-}
-
-/**
-* Image styles for all levels in size
-**/
-img.ui-img-jumbotron {
-    display: block;
-    position: relative !important;
-    margin: 5px 0;
-    max-height: 10em !important;
-}
-
-img.ui-img-thumbnail {
-
-}
-
-img.ui-img-icon {
-
+    color: blue;
 }

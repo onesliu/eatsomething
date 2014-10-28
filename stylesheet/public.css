@@ -1,3 +1,18 @@
+/**********************************
+**  Global styles
+***********************************/
+.ui-content {
+    padding: 0;
+    margin: 0;
+}
+
+.ui-listview {
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    margin: 0 2% !important;
+}
+
 .bg-color-gray {
     background-color: #eee !important;
 }
@@ -11,4 +26,126 @@
 .ui-li-text-middle {
     line-height: 1em;
     height: 1em;
+}
+
+.ui-header {
+    border: 0;
+}
+
+.ui-bar-a ul {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+    border-width: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .14);
+}
+
+.ui-bar-a li {
+    border-right: 1px;
+}
+
+.ui-bar-a li .ui-btn {
+    border-width: 0;
+    border-radius: 0;
+    background-color: #58B073 !important;
+}
+
+.ui-bar-a li .ui-btn:hover {
+    background-color: #40AB61;
+    text-shadow: none;
+}
+
+/**********************************
+**  Footer styles
+***********************************/
+.ui-footer {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, .26);
+    border-top: 1px solid rgba(0, 0, 0, .14);
+}
+
+.ui-footer .ui-btn {
+    display: block;
+    margin: 0;
+    border: 0;
+}
+
+.footer-empty {
+    box-shadow: 0 0 0;
+    border: 0;
+    margin: 0;
+}
+
+/**********************************
+**  Text styles
+***********************************/
+.ui-header .ui-text-header {
+    color: rgba(255, 255, 255, .87) !important;
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+
+.ui-header .ui-text-menuicon-caption {
+    color: rgba(255, 255, 255, .87) !important;
+    font-weight: normal;
+    text-shadow: none !important;
+}
+
+/* The text style for button "previous page" */
+.ui-header .ui-text-prev-page {
+    text-align: left;
+}
+
+.ui-content .ui-text-subheader {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, .54);
+}
+
+.ui-content .ui-text-summary {
+    max-width: 100%;
+    min-height: 3em;
+    padding: 10px 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd /*{a-bup-border}*/;
+    background-color: #f6f6f6 /*{a-bup-background-color}*/;
+    color: rgba(0, 0, 0, .87);
+    text-shadow: none;
+}
+
+.ui-content .ui-text-summary aside {
+    padding: 0;
+    margin: 10px 0 0;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, .54);
+}
+
+.ui-content .ui-text-summary header {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px 0 10px;
+}
+
+.ui-footer .ui-text-footer {
+    color: rgba(0, 0, 0, .87) !important;
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+
+/**********************************
+**  Image styles
+***********************************/
+img.img-jumbotron {
+    display: block;
+    position: relative !important;
+    margin: 0;
+    max-height: 10em !important;
+    width: 100%;
+}
+
+img.ui-img-thumbnail {
+
+}
+
+img.ui-img-icon {
+
 }
