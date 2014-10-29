@@ -33,46 +33,50 @@
     </div>
 
     <!-- The content -->
-    <div data-role="content" class="bg-color-gray pagecontent-full-filled">
+    <div data-role="content" class="bg-color-gray">
 
       <!-- Header images sliding -->
       <div class="slider-wrapper theme-default">
         <div id="slider" class="nivoSlider">
-          <img src="images/food_01.jpg" alt="" title="滑动图标题-01"/>
-          <img src="images/food_03.jpg" alt="" title="滑动图标题-02"/>
-          <img src="images/food_02.jpg" alt="" title="滑动图标题-03"/>
+          <img src="images/recipe_01.jpg" alt="" title="滑动图标题-01"/>
+          <img src="images/recipe_02.jpg" alt="" title="滑动图标题-02"/>
+          <img src="images/recipe_03.jpg" alt="" title="滑动图标题-03"/>
         </div>
       </div>
 
       <!-- Introduction to the dish -->
-      <section id="recipe_summary" class="ui-text-summary">
+      <div class="ui-text-summary-wrapper">
         <header>宫保鸡丁</header>
+        <section id="recipe_summary" class="ui-text-summary">
         宫保鸡丁是汉族传统经典的名菜，鲁菜和川菜都有该道菜的做法，但是用料有所差别。创始人为贵州织金人丁宝桢，在任山东巡抚时创制该菜，后任四川总督时加以改良，流传至今。此道菜也被归纳为北京宫廷菜。
         <aside id="recipe_tag" class="tag">
-          <i class="fa fa-tag pull-left"></i>属性：清淡 快速制作 幼儿 美容
+          <i class="fa fa-tag pull-left"></i>清淡 快速制作 幼儿 美容
         </aside>
       </section>
+      </div>
 
       <!-- The cook guide for this dish -->
-      <ul id="dish_guide_listview" data-role="listview" data-inset="true" data-autodividers="false" data-icon="true">
+      <ul id="dish_guide_listview" class="ul-details" data-role="listview" data-inset="true" data-autodividers="false" data-icon="none">
         <li data-icon="carat-r">
-          <a href="dish_guide.html" class="ui-li-text-middle">
-            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
-            制作过程：菜哥子做川菜
+          <a href="dish_guide.html">
+            <div class="li-thumb-wrapper"><img src="images/dish_01.jpg" class="ui-img-thumbnail"></div>
+            <div class="li-details-wrapper"><header>制作过程：菜哥子做川菜</header></div>
           </a>
         </li>
       </ul>
 
       <!-- The list of ingredients for current dish -->
-      <header class="">原料购买</header>
-      <ul id="dish_ingredients_listview" data-role="listview" data-inset="true" data-autodividers="false" data-icon="false">
+      <header class="ui-text-listview-header">原料购买</header>
+      <ul class="ui-listview-formcontrol" data-role="listview" data-inset="true" data-autodividers="false" data-icon="false">
         <li data-role="list-divider">
-          <h2 class="ui-text-subheader">主料</h2>
+          <header class="ui-text-subheader">主料</header>
         </li>
         <li>
-          <a href="dish_ingredient.html" class="ui-li-text-middle li-with-formcontrol">
             <input type="checkbox" id="ingredient_master_1" name="ingredient_1">
-            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+          <a href="ingredient_details.html" class="ui-li-text-middle li-with-formcontrol">
+            <div class="li-thumb-wrapper">
+              <img src="images/ingredient_01.jpg" class="ui-li-thumb ui-li-aside">
+            </div>
 
             <p>
               <span class="text-ingredient-name">原料一</span>
@@ -82,9 +86,14 @@
           </a>
         </li>
         <li>
-          <a href="dish_ingredient.html" class="ui-li-text-middle li-with-formcontrol">
-            <input type="checkbox" id="ingredient_master_2" name="ingredient_2">
-            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+          <a href="ingredient_details.html" class="ui-li-text-middle li-with-formcontrol">
+            <div class="li-formcontrol-wrapper">
+              <input type="checkbox" id="ingredient_master_2" name="ingredient_2">
+            </div>
+
+            <div class="li-thumb-wrapper">
+              <img src="images/ingredient_02.jpg" class="ui-li-thumb ui-li-aside">
+            </div>
 
             <p>
               <span class="text-ingredient-name">原料二</span>
@@ -94,9 +103,9 @@
           </a>
         </li>
         <li>
-          <a href="dish_ingredient.html" class="ui-li-text-middle li-with-formcontrol">
+          <a href="ingredient_details.html" class="ui-li-text-middle li-with-formcontrol">
             <input type="checkbox" id="ingredient_master_3" name="ingredient_3">
-            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+            <img src="images/ingredient_03.jpg" class="ui-li-thumb ui-li-aside">
 
             <p>
               <span class="text-ingredient-name">原料三</span>
@@ -107,12 +116,12 @@
         </li>
 
         <li data-role="list-divider">
-          <h2 class="ui-text-subheader">辅料</h2>
+          <header class="ui-text-subheader">辅料</header>
         </li>
         <li>
-          <a href="dish_ingredient.html" class="ui-li-text-middle li-with-formcontrol">
+          <a href="ingredient_details.html" class="ui-li-text-middle li-with-formcontrol">
             <input type="checkbox" id="ingredient_slave_1" name="ingredient_1">
-            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
+            <img src="images/ingredient_slave_01.JPG" class="ui-li-thumb ui-li-aside">
 
             <p>
               <span class="text-ingredient-name">辅料一</span>
@@ -122,12 +131,22 @@
           </a>
         </li>
         <li>
-          <a href="dish_ingredient.html" class="ui-li-text-middle li-with-formcontrol">
+          <a href="ingredient_details.html" class="ui-li-text-middle li-with-formcontrol">
             <input type="checkbox" id="ingredient_slave_2" name="ingredient_2">
-            <img src="images/dish_guide_thumb.jpg" class="ui-li-thumb ui-li-aside">
-
+            <img src="images/ingredient_slave_02.jpg" class="ui-li-thumb ui-li-aside">
             <p>
               <span class="text-ingredient-name">辅料二</span>
+              <span class="text-ingredient-weight">250克</span>
+              <span class="text-ingredient-instock">有货</span>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="ingredient_details.html" class="ui-li-text-middle li-with-formcontrol">
+            <input type="checkbox" id="ingredient_slave_3" name="ingredient_2">
+            <img src="images/ingredient_slave_03.jpg" class="ui-li-thumb ui-li-aside">
+            <p>
+              <span class="text-ingredient-name">辅料三</span>
               <span class="text-ingredient-weight">10克</span>
               <span class="text-ingredient-instock">有货</span>
             </p>
@@ -151,6 +170,7 @@
           animSpeed: 500,
           pauseTime: 3000,
           directionNav: false,
+          controlNav: false,
           boxCols: 10
         });
 

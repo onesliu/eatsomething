@@ -20,10 +20,10 @@
   <div data-role="header" data-position="fixed" data-theme="a">
     <div data-role="navbar">
       <ul>
-        <li><a href="#promotions" data-role="button" class="ui-text-menuicon-caption"><i class="fa fa-home fa-3x fa-fw"></i><header>吃什么</header></a></li>
-        <li><a href="#categories" data-role="button" class="ui-text-menuicon-caption"><i class="fa fa-bars fa-3x fa-fw"></i><header>商品分类</header></a></li>
-        <li><a href="#billings" data-role="button" class="ui-text-menuicon-caption"><i class="fa fa-shopping-cart fa-3x fa-fw"></i><header>结帐</header></a></li>
-        <li><a href="#orders" data-role="button" class="ui-text-menuicon-caption"><i class="fa fa-user fa-3x fa-fw"></i><header>我的订单</header></a></li>
+        <li><a href="index.html" data-role="button" class="ui-text-menuicon-caption"><i class="fa fa-home fa-3x fa-fw"></i><header>吃什么</header></a></li>
+        <li><a href="categories.html" data-role="button" class="ui-text-menuicon-caption"><i class="fa fa-bars fa-3x fa-fw"></i><header>商品分类</header></a></li>
+        <li><a href="shopping_cart.html" data-role="button" class="ui-text-menuicon-caption"><i class="fa fa-shopping-cart fa-3x fa-fw"></i><header>结帐</header></a></li>
+        <li><a href="orders.html" data-role="button" class="ui-text-menuicon-caption"><i class="fa fa-user fa-3x fa-fw"></i><header>我的订单</header></a></li>
       </ul>
     </div>
   </div>
@@ -33,27 +33,36 @@
     <div class="sub-navbar-wrapper">
     <h6 class="sub-navbar ui-text-subheader">今日菜谱</h6>
     </div>
-    <ul class="ul-jumbotron" data-role="listview" data-inset="true" data-autodividers="false" data-icon="false">
-      <!--<li data-role="list-divider"><h2>今日菜谱</h2></li>-->
-      <li>
-        <a href="recipe_details.html" class="li-link-jumbotron">
-          <img src="images/pure_01.jpg" class="img-jumbotron">
-          <footer>累觉不爱，随便做点家常的饭菜</footer>
-        </a>
-      </li>
-      <li>
-        <a href="recipe_details.html" class="li-link-jumbotron">
-          <img src="images/pure_02.jpg" class="img-jumbotron">
-          <footer>家常味</footer>
-        </a>
-      </li>
-      <li>
-        <a href="recipe_details.html" class="li-link-jumbotron">
-          <img src="images/pure_03.jpg" class="img-jumbotron">
-          <footer>佳肴美食醉人</footer>
-        </a>
-      </li>
-    </ul>
+
+    <div class="ui-listview-wrapper">
+      <ul class="ul-jumbotron" data-role="listview" data-inset="true" data-autodividers="false" data-icon="false">
+        <!--<li data-role="list-divider"><h2>今日菜谱</h2></li>-->
+        <li>
+          <a href="recipe_details.html" class="li-link-jumbotron">
+            <div class="img-jumbotron-wrapper"><img src="images/recipe_01.jpg" class="img-jumbotron"></div>
+            <footer>累觉不爱，随便做点家常的饭菜</footer>
+          </a>
+        </li>
+        <li>
+          <a href="recipe_details.html" class="li-link-jumbotron">
+            <div class="img-jumbotron-wrapper"><img src="images/recipe_02.jpg" class="img-jumbotron"></div>
+            <footer>家常味</footer>
+          </a>
+        </li>
+        <li>
+          <a href="recipe_details.html" class="li-link-jumbotron">
+            <div class="img-jumbotron-wrapper"><img src="images/recipe_03.jpg" class="img-jumbotron"></div>
+            <footer>佳肴美食醉人</footer>
+          </a>
+        </li>
+        <li>
+          <a href="recipe_details.html" class="li-link-jumbotron">
+            <div class="img-jumbotron-wrapper"><img src="images/recipe_04.jpg" class="img-jumbotron"></div>
+            <footer>佳肴美食醉人</footer>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <!-- footer -->

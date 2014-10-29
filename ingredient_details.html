@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Delicious!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="stylesheet/jquery_mobile/jquery.mobile-1.4.4.css">
+  <link rel="stylesheet" href="stylesheet/font-awesome.css">
+  <link rel="stylesheet" href="stylesheet/public.css">
+  <link rel="stylesheet" href="stylesheet/delicious.css">
+  <script type="text/javascript" src="javascript/jquery/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="javascript/jquery_mobile/jquery.mobile-1.4.4.js"></script>
+  <script type="text/javascript" src="javascript/jquery/jquery.nivo.slider.pack.js"></script>
+</head>
+<body>
+<div data-role="page">
+
+  <!-- header -->
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a href="index.html" data-role="button" class="ui-text-header ui-text-prev-page">
+            <i class="fa fa-angle-double-left fa-lg fa-fw"></i>&nbsp;
+            返回
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div data-role="content" class="bg-color-gray">
+    <!-- Header images sliding -->
+    <div class="slider-wrapper theme-default">
+      <div id="slider" class="nivoSlider">
+        <img src="images/recipe_01.jpg" alt="" title="滑动图标题-01"/>
+        <img src="images/recipe_02.jpg" alt="" title="滑动图标题-02"/>
+        <img src="images/recipe_03.jpg" alt="" title="滑动图标题-03"/>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- footer -->
+  <div data-role="footer" data-position="fixed" data-theme="a">
+    <a href="orders.html" data-role="button" class="ui-text-footer" data-corners="false">加入原料购物车&nbsp;
+      <i class="fa fa-lg fa-shopping-cart"></i>
+    </a>
+  </div>
+</div>
+
+<!--<script type="text/javascript">-->
+  <!--$(window).load(function () {-->
+    <!--$('#slider').nivoSlider({-->
+      <!--effect: 'sliceDownLeft',-->
+      <!--animSpeed: 500,-->
+      <!--pauseTime: 3000,-->
+      <!--directionNav: false,-->
+      <!--controlNav: false,-->
+      <!--boxCols: 10-->
+    <!--});-->
+
+    <!--$('#slider').bind('swipeleft', function (e) {-->
+      <!--$('a.nivo-nextNav').trigger('click');-->
+      <!--e.stopImmediatePropagation();-->
+      <!--return false;-->
+    <!--});-->
+
+    <!--$('#slider').bind('swiperight', function (e) {-->
+      <!--$('a.nivo-prevNav').trigger('click');-->
+      <!--e.stopImmediatePropagation();-->
+      <!--return false;-->
+    <!--});-->
+
+  <!--});-->
+<!--</script>-->
+</body>
+</html>

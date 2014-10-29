@@ -1,8 +1,17 @@
 /**********************************
 **  Global styles
+**
+**  border-color:               #dfdfdf
+**  base-bg-color:              #eee
+**  top-bg-color:               #fefefe
+**  list-margin-top-bottom:     10px
+**  list-padding-left-right:    10px
+**  list-padding-top-bottom:    15px
+**  list-font-size-paragraph:   .8em
 ***********************************/
 .ui-content {
     padding: 0;
+    border: 0;
     margin: 0;
 }
 
@@ -11,17 +20,11 @@
     border: 0;
     border-radius: 0;
     margin: 0 !important;
-    padding: 0 1% !important;
+    padding: 0 !important;
 }
 
 .bg-color-gray {
     background-color: #eee !important;
-}
-
-.pagecontent-full-filled {
-    padding: 0;
-    margin: 0;
-    border: 0;
 }
 
 .ui-li-text-middle {
@@ -36,7 +39,7 @@
 .ui-bar-a ul {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
     border-width: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .14);
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .ui-bar-a li {
@@ -54,12 +57,63 @@
     text-shadow: none;
 }
 
+
+/**********************************
+**  Styles for list with common list view
+***********************************/
+.ui-text-listview-header {
+    margin-left: 10px;
+    padding: 15px 0 5px;
+    color: #333;
+    font-size: .8em;
+}
+
+.ui-listview {
+    background-color: #FEFEFE;
+}
+
+.ui-listview > li {
+    padding: 15px 10px !important;
+    border-bottom: 1px solid #dfdfdf;
+    overflow: hidden;
+    background-color: #FEFEFE;
+}
+
+li.ui-first-child {
+    border-top: 1px solid #dfdfdf;
+}
+
+.ui-listview > li .ui-btn {
+    padding: 0;
+    margin: 0;
+    border: 0 !important;
+    background-color: #FEFEFE !important;
+}
+
+.ui-listview > li > .ui-btn img {
+    max-width: 100% !important;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ui-listview > li > .ui-btn footer {
+    margin: 0;
+    padding: .7em 1em;
+    color: #666;
+    background-color: #FEFEFE;
+    text-align: left;
+    text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #f3f3f3 /*{a-page-shadow-color}*/;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /**********************************
 **  Footer styles
 ***********************************/
 .ui-footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, .26);
-    border-top: 1px solid rgba(0, 0, 0, .14);
+    border-top: 1px solid #dfdfdf;
 }
 
 .ui-footer .ui-btn {
@@ -97,21 +151,31 @@
 
 .ui-content .ui-text-subheader {
     font-size: 1.1em;
-    color: rgba(0, 0, 0, .54);
+    color: #666;
 }
 
 .ui-content .ui-text-summary-wrapper {
+    padding: 0 10px;
+    border: 1px solid #dfdfdf /*{a-bup-border}*/;
     margin: 0;
-    padding: 3% 1% 0 !important;
+    margin-bottom: 10px !important;
+    background-color: #FEFEFE;
 }
 
-.ui-content .ui-text-summary {
+.ui-content .ui-text-summary-wrapper header {
+    padding-top: 15px;
+    font-weight: bold;
+    background-color: #FEFEFE;
+    color: #666;
+    text-shadow: none;
+}
+
+.ui-content .ui-text-summary-wrapper .ui-text-summary {
     max-width: 100%;
     min-height: 3em;
-    padding: 10px 8px;
-    margin: 5px 0;
-    border: 1px solid #ddd /*{a-bup-border}*/;
-    background-color: #f6f6f6 /*{a-bup-background-color}*/;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #FEFEFE /*{a-bup-background-color}*/;
     color: rgba(0, 0, 0, .87);
     text-shadow: none;
 }
@@ -120,14 +184,12 @@
     padding: 0;
     margin: 10px 0 0;
     font-size: 0.8em;
-    color: rgba(0, 0, 0, .54);
+    color: #666;
 }
 
-.ui-content .ui-text-summary header {
-    font-size: 1.1em;
-    font-weight: bold;
+.ui-content .ui-text-price {
     text-align: left;
-    margin: 5px 0 10px;
+    color: RED;
 }
 
 .ui-footer .ui-text-footer {
@@ -149,9 +211,24 @@ img.img-jumbotron {
 }
 
 img.ui-img-thumbnail {
-
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 img.ui-img-icon {
 
+}
+
+
+/**
+** Style for the images sliding
+**/
+.slider-wrapper {
+    height: 20%;
+}
+
+.slider-wrapper .nivoSlider {
+    margin: 0;
 }

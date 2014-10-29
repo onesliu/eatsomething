@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Delicious!</title>
+  <link rel="stylesheet" href="stylesheet/jquery_mobile/jquery.mobile-1.4.4.css">
+  <link rel="stylesheet" href="stylesheet/font-awesome.css">
+  <link rel="stylesheet" href="stylesheet/public.css">
+  <link rel="stylesheet" href="stylesheet/delicious.css">
+  <script type="text/javascript" src="javascript/jquery/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="javascript/jquery_mobile/jquery.mobile-1.4.4.js"></script>
+  <script type="text/javascript" src="javascript/jquery/jquery.nivo.slider.pack.js"></script>
+</head>
+<body>
+<div data-role="page">
+
+  <!-- header -->
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a href="index.html" data-role="button" class="ui-text-header ui-text-prev-page">
+            <i class="fa fa-angle-double-left fa-lg fa-fw"></i>&nbsp;
+            返回
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div data-role="content" class="bg-color-gray">
+    <!-- the dishes listview in currently selected recipe -->
+    <ul id="dishes_listview" class="ul-details" data-role="listview" data-inset="true" data-autodividers="false"
+        data-icon="none">
+      <li data-icon="carat-r">
+        <a href="dish_details.html">
+          <div class="li-thumb-wrapper"><img src="images/dish_01.jpg" class="ui-img-thumbnail"></div>
+          <div class="li-details-wrapper">
+            <header>菜品一</header>
+            <p>累觉不爱，随便做点家常的饭菜 </p>
+          </div>
+        </a>
+      </li>
+      <li data-icon="carat-r">
+        <a href="dish_details.html">
+          <div class="li-thumb-wrapper"><img src="images/dish_02.jpg" class="ui-img-thumbnail"></div>
+          <div class="li-details-wrapper">
+            <header>菜品二</header>
+            <p>家常味</p></div>
+        </a>
+      </li>
+      <li data-icon="carat-r">
+        <a href="dish_details.html">
+          <div class="li-thumb-wrapper"><img src="images/dish_03.jpg" class="ui-img-thumbnail"></div>
+          <div class="li-details-wrapper">
+            <header>菜品三</header>
+            <p>佳肴美食醉人</p></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

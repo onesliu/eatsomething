@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Delicious!</title>
+  <link rel="stylesheet" href="stylesheet/jquery_mobile/jquery.mobile-1.4.4.css">
+  <link rel="stylesheet" href="stylesheet/font-awesome.css">
+  <link rel="stylesheet" href="stylesheet/public.css">
+  <link rel="stylesheet" href="stylesheet/delicious.css">
+  <script type="text/javascript" src="javascript/jquery/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="javascript/jquery_mobile/jquery.mobile-1.4.4.js"></script>
+  <script type="text/javascript" src="javascript/jquery/jquery.nivo.slider.pack.js"></script>
+</head>
+<body>
+<div data-role="page" class="bg-color-gray">
+
+  <!-- header -->
+  <div data-role="header" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a href="index.html" data-role="button" class="ui-text-header ui-text-prev-page">
+            <i class="fa fa-angle-double-left fa-lg fa-fw"></i>&nbsp;
+            返回
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div data-role="content" class="bg-color-gray">
+    <!-- the dishes listview in currently selected recipe -->
+    <ul id="dishes_listview" class="ul-details ui-categories" data-role="listview" data-inset="true" data-autodividers="false"
+        data-icon="none">
+      <li data-role="list-divider">
+        <header class="ui-text-subheader">菜品筛选</header>
+      </li>
+      <li data-icon="carat-r">
+        <a href="dish_details.html">
+          <div class="li-thumb-wrapper"><img src="images/slide_pic01.jpg" class="ui-img-thumbnail"></div>
+          <div class="li-details-wrapper li-text-middle">
+            <header>菜品品种</header>
+          </div>
+        </a>
+      </li>
+      <li data-icon="carat-r">
+        <a href="dish_details.html">
+          <div class="li-thumb-wrapper"><img src="images/slide_pic02.jpg" class="ui-img-thumbnail"></div>
+          <div class="li-details-wrapper li-text-middle">
+            <header>适宜人群</header>
+          </div>
+        </a>
+      </li>
+      <li data-icon="carat-r">
+        <a href="dish_details.html">
+          <div class="li-thumb-wrapper"><img src="images/slide_pic03.jpg" class="ui-img-thumbnail"></div>
+          <div class="li-details-wrapper li-text-middle">
+            <header>身体调理</header>
+          </div>
+        </a>
+      </li>
+      <li data-icon="carat-r">
+        <a href="dish_details.html">
+          <div class="li-thumb-wrapper"><img src="images/slide_pic01.jpg" class="ui-img-thumbnail"></div>
+          <div class="li-details-wrapper li-text-middle">
+            <header>疾病调理</header>
+          </div>
+        </a>
+      </li>
+      <li data-icon="carat-r">
+        <a href="dish_details.html">
+          <div class="li-thumb-wrapper"><img src="images/slide_pic02.jpg" class="ui-img-thumbnail"></div>
+          <div class="li-details-wrapper li-text-middle"><header>制作难度</header></div>
+        </a>
+      </li>
+
+    </ul>
+
+    <div class="ui-searchform-container bg-color-gray">
+      <div class="ui-searchform-title-wrapper">
+        <header>自由选择</header>
+      </div>
+      <form method="post" action="#" class="ui-searchform">
+        <fieldset>
+          <div data-role="controlgroup">
+            <label for="red">快速制作</label>
+            <input type="checkbox" name="favcolor" id="red" value="red">
+            <label for="green">中等复杂度</label>
+            <input type="checkbox" name="favcolor" id="green" value="green">
+            <label for="blue">精细制作</label>
+            <input type="checkbox" name="favcolor" id="blue" value="blue">
+          </div>
+          <!--<input type="submit" data-inline="true" value="看看有什么可吃的">-->
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div data-role="footer" data-theme="a" class="ui-searchform-submit-btn bg-color-gray" >
+     <a href="searchresult.html" data-role="button" class="ui-text-footer" data-corners="false">看看有什么可吃的
+     </a>
+   </div>
+</div>
+</body>
+</html>
