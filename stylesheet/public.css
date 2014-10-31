@@ -57,7 +57,6 @@
     text-shadow: none;
 }
 
-
 /**********************************
 **  Styles for list with common list view
 ***********************************/
@@ -136,6 +135,11 @@ li.ui-first-child {
     font-size: 1.1em !important;
     font-weight: normal !important;
     text-shadow: none !important;
+}
+
+.ui-btn-active {
+    text-shadow: none !important;
+    text-decoration: none;
 }
 
 .ui-header .ui-text-menuicon-caption {
@@ -231,4 +235,98 @@ img.ui-img-icon {
 
 .slider-wrapper .nivoSlider {
     margin: 0;
+}
+
+
+/**
+** custom icons for the jquery mobile
+**/
+/*.ui-collapsible-heading-toggle {
+    height: 30px;
+    *//*margin: -3px; *//**//*Modify to change icon position wrt the header*//*
+    *//*border: none !important;*//*
+}*/
+
+.ui-head-searchform .ui-controlgroup-controls {
+    width: 100%;
+}
+
+.ui-head-searchform .ui-input-text{
+    float: left;
+    width: 63%;
+    margin: 0 10px;
+}
+
+.ui-head-searchform a {
+    margin: 0 .6em !important;
+    padding: .8em 2em;
+}
+
+.ui-collapsible-inset, .ui-collapsible-set {
+    margin: 0.8em 0;
+}
+
+.ui-collapsible-search .ui-btn-icon-left {
+    padding-left: 3.5em;
+}
+
+.ui-icon-search-dishtype:after {
+    /*background-size: 50px 50px;*/
+    background: url(../images/slide_pic01.jpg) center center no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 3px;
+    top: 27%;
+    left: 0;
+}
+
+.ui-icon-search-people:after {
+    background: url(../images/slide_pic02.jpg) center center no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 3px;
+    top: 27%;
+    left: 0;
+}
+
+.ui-icon-search-bodytiaoli:after {
+    background: url(../images/slide_pic03.jpg) center center no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 3px;
+    top: 27%;
+    left: 0;
+}
+
+.ui-icon-search-jibingtiaoli:after {
+    background: url(../images/slide_pic01.jpg) center center no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 3px;
+    top: 27%;
+    left: 0;
+}
+
+.ui-icon-search-diffculty:after {
+    background: url(../images/slide_pic02.jpg) center center no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 3px;
+    top: 27%;
+    left: 0;
 }

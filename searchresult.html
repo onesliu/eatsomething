@@ -12,6 +12,18 @@
   <script type="text/javascript" src="javascript/jquery/jquery-1.11.1.js"></script>
   <script type="text/javascript" src="javascript/jquery_mobile/jquery.mobile-1.4.4.js"></script>
   <script type="text/javascript" src="javascript/jquery/jquery.nivo.slider.pack.js"></script>
+  <script type="text/javascript" src="javascript/ftellipsis.min.js"></script>
+
+  <style type="text/css">
+
+    .li-details-wrapper {
+      width: 70%;
+    }
+
+    .ui-listview > li p {
+      white-space: normal;
+    }
+  </style>
 </head>
 <body>
 <div data-role="page">
@@ -40,7 +52,11 @@
           <div class="li-thumb-wrapper"><img src="images/dish_01.jpg" class="ui-img-thumbnail"></div>
           <div class="li-details-wrapper">
             <header>菜品一</header>
-            <p>累觉不爱，随便做点家常的饭菜 </p>
+            <p>随便做点家常的饭菜随便做点家常的饭菜随便做点家常的饭菜随便做点家常的饭菜随便做点家常的饭菜随便做点家常的饭菜随便做点家
+              常的饭菜随便做点家常的饭菜随便做点家常的饭菜随便做点家常的饭菜巍峨丰富的角度看立法实践；的房间；啊是将发动机萨罗夫就阿斯利
+              的撒娇发；了撒娇发iowpureiowepqurioquewiop康发动机；阿斯顿飞阿斯顿飞就可达十几分看到；了撒娇龙卷风；的维吾尔文
+              <span class="ellipsis" style="display: none">...</span>
+            </p>
           </div>
         </a>
       </li>
@@ -64,5 +80,23 @@
   </div>
 </div>
 
+<script type="text/javascript">
+  $(function() {
+    $('.ellipsis').each(function(n, el) {
+      var $ellipsis = $(el),
+          $parent = $ellipsis.parent(),
+          constrainedHeight = $parent.height(),
+          freeHeight;
+
+      $parent.css('height', 'auto');
+      freeHeight = $parent.height();
+      $parent.css('height', constrainedHeight);
+
+      if (freeHeight > constrainedHeight) {
+        $ellipsis.show();
+      }
+    });
+  });
+</script>
 </body>
 </html>

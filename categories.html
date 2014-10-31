@@ -33,7 +33,7 @@
   <!-- content -->
   <div data-role="content" class="bg-color-gray">
     <!-- the dishes listview in currently selected recipe -->
-    <ul id="dishes_listview" class="ul-details ui-categories" data-role="listview" data-inset="true" data-autodividers="false"
+    <!--<ul id="dishes_listview" class="ul-details ui-categories" data-role="listview" data-inset="true" data-autodividers="false"
         data-icon="none">
       <li data-role="list-divider">
         <header class="ui-text-subheader">菜品筛选</header>
@@ -76,33 +76,122 @@
           <div class="li-details-wrapper li-text-middle"><header>制作难度</header></div>
         </a>
       </li>
+    </ul>-->
 
-    </ul>
+    <div class="ui-field-contain ui-head-searchform">
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <input type="text" name="dishname" data-inline="true" id="dishname" placeholder="输入菜品名查询">
+        <a href="searchresult.html" data-mini="true" data-role="button" class="ui-text-footer" data-corners="false">查询</a>
+      </fieldset>
+    </div>
 
-    <div class="ui-searchform-container bg-color-gray">
-      <div class="ui-searchform-title-wrapper">
-        <header>自由选择</header>
+    <div data-role="collapsible-set" class="ui-collapsible-search">
+      <div data-role="collapsible" data-collapsed-icon="search-dishtype" data-expanded-icon="search-dishtype">
+        <h1>菜品品种</h1>
+
+        <div class="ui-searchform-container bg-color-gray">
+          <form method="post" action="#" class="ui-searchform">
+            <fieldset>
+              <div data-role="controlgroup">
+                <label for="spicy">辛辣</label>
+                <input type="checkbox" name="favcolor" id="spicy" value="spicy">
+                <label for="soap">汤类</label>
+                <input type="checkbox" name="favcolor" id="soap" value="soap">
+                <label for="zhejiang">江浙菜</label>
+                <input type="checkbox" name="favcolor" id="zhejiang" value="zhejiang">
+              </div>
+              <!--<input type="submit" data-inline="true" value="看看有什么可吃的">-->
+            </fieldset>
+          </form>
+        </div>
       </div>
-      <form method="post" action="#" class="ui-searchform">
-        <fieldset>
-          <div data-role="controlgroup">
-            <label for="red">快速制作</label>
-            <input type="checkbox" name="favcolor" id="red" value="red">
-            <label for="green">中等复杂度</label>
-            <input type="checkbox" name="favcolor" id="green" value="green">
-            <label for="blue">精细制作</label>
-            <input type="checkbox" name="favcolor" id="blue" value="blue">
-          </div>
-          <!--<input type="submit" data-inline="true" value="看看有什么可吃的">-->
-        </fieldset>
-      </form>
+
+      <div data-role="collapsible" data-collapsed-icon="search-people" data-expanded-icon="search-people">
+        <h1>适宜人群</h1>
+
+        <div class="ui-searchform-container bg-color-gray">
+          <form method="post" action="#" class="ui-searchform">
+            <fieldset>
+              <div data-role="controlgroup">
+                <label for="old">老年人</label>
+                <input type="checkbox" name="favcolor" id="old" value="old">
+                <label for="young">青壮年</label>
+                <input type="checkbox" name="favcolor" id="young" value="young">
+                <label for="children">青少年</label>
+                <input type="checkbox" name="favcolor" id="children" value="children">
+              </div>
+              <!--<input type="submit" data-inline="true" value="看看有什么可吃的">-->
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <div data-role="collapsible" data-collapsed-icon="search-bodytiaoli" data-expanded-icon="search-bodytiaoli">
+        <h2>身体调理</h2>
+
+        <div class="ui-searchform-container bg-color-gray">
+          <form method="post" action="#" class="ui-searchform">
+            <fieldset>
+              <div data-role="controlgroup">
+                <label for="body_tiaoli_01">身体调理方案1</label>
+                <input type="checkbox" name="favcolor" id="body_tiaoli_01" value="red">
+                <label for="body_tiaoli_02">身体调理方案2</label>
+                <input type="checkbox" name="favcolor" id="body_tiaoli_02" value="green">
+                <label for="body_tiaoli_03">身体调理方案3</label>
+                <input type="checkbox" name="favcolor" id="body_tiaoli_03" value="blue">
+              </div>
+              <!--<input type="submit" data-inline="true" value="看看有什么可吃的">-->
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <div data-role="collapsible" data-collapsed-icon="search-jibingtiaoli" data-expanded-icon="search-jibingtiaoli">
+        <h2>疾病调理</h2>
+
+        <div class="ui-searchform-container bg-color-gray">
+          <form method="post" action="#" class="ui-searchform">
+            <fieldset>
+              <div data-role="controlgroup">
+                <label for="tiaoli_01">疾病调理方案1</label>
+                <input type="checkbox" name="favcolor" id="tiaoli_01" value="tiaoli_01">
+                <label for="tiaoli_02">疾病调理方案2</label>
+                <input type="checkbox" name="favcolor" id="tiaoli_02" value="tiaoli_02">
+                <label for="tiaoli_03">疾病调理方案3</label>
+                <input type="checkbox" name="favcolor" id="tiaoli_03" value="tiaoli_03">
+              </div>
+              <!--<input type="submit" data-inline="true" value="看看有什么可吃的">-->
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <div data-role="collapsible" data-collapsed-icon="search-diffculty" data-expanded-icon="search-diffculty">
+        <h2>制作难度</h2>
+
+        <div class="ui-searchform-container bg-color-gray">
+          <form id="difficulty" method="post" action="#" class="ui-searchform">
+            <fieldset>
+              <div data-role="controlgroup">
+                <label for="difficulty_01">快速制作</label>
+                <input type="checkbox" name="favcolor" id="difficulty_01" value="difficulty_01">
+                <label for="difficulty_02">中等复杂度</label>
+                <input type="checkbox" name="favcolor" id="difficulty_02" value="difficulty_02">
+                <label for="difficulty_03">精细制作</label>
+                <input type="checkbox" name="favcolor" id="difficulty_03" value="difficulty_03">
+              </div>
+              <!--<input type="submit" data-inline="true" value="看看有什么可吃的">-->
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div data-role="footer" data-theme="a" class="ui-searchform-submit-btn bg-color-gray" >
-     <a href="searchresult.html" data-role="button" class="ui-text-footer" data-corners="false">看看有什么可吃的
-     </a>
-   </div>
+  <div data-role="footer" data-theme="a" class="ui-searchform-submit-btn bg-color-gray">
+    <a href="searchresult.html" data-role="button" class="ui-text-footer" data-corners="false">看看有什么可吃的
+    </a>
+  </div>
 </div>
 </body>
 </html>

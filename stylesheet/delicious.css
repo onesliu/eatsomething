@@ -24,7 +24,7 @@ ul.ul-jumbotron {
 
 .ul-jumbotron > li {
     padding: 0 !important;
-    margin: 0 0 15px !important;
+    margin: 0 0 -1px !important;
     background-color: #FEFEFE;
     border: 0;
 }
